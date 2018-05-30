@@ -1,56 +1,56 @@
-{  
-   "Patterns":[
-      {
-         "Fundamental":[
-            "Delegation pattern",
-            "Abstract Superclass",
-            "Functional design",
-            "Interface",
-            "Immutable interface",
-            "Marker interface",
-            "Property container"
-         ]
-      },
-      {  
-         "Creational":[  
-            "Abstract Factory",
-            "Builder",
-            "Factory Method",
-            "Lazy initialization",
-            "Object pool",
-            "Prototype",
-            "Singleton"
-         ]
-      },
-      {  
-         "Structural":[  
-            "Adapter/Wrapper",
-            "Bridge",
-            "Composite",
-            "Decorator",
-            "Facade",
-            "Front controller",
-            "Flyweight",
-            "Proxy"
-         ]
-      },
-      {  
-         "Behavioral":[  
-            "Chain of Responsibility",
-            "Command",
-            "Interpreter",
-            "Iterator",
-            "Mediator",
-            "Memento",
-            "Null Object",
-            "Observer",
-            "Servant",
-            "Specification",
-            "State",
-            "Strategy",
-            "Template Method",
-            "Visitor"
-         ]
-      }
-   ]
+{
+  "Patterns": [
+    {
+      "Fundamental": [
+        "Delegation pattern",
+        "Abstract Superclass",
+        "Functional design",
+        "Interface",
+        "Immutable interface",
+        "Marker interface",
+        "Property container"
+      ]
+    },
+    {
+      "Creational": [
+        "Abstract Factory",
+        "Builder",
+        "Factory Method",
+        "Lazy initialization",
+        "Object pool",
+        "Prototype",
+        "Singleton"
+      ]
+    },
+    {
+      "Structural": [
+        "Adapter/Wrapper",
+        "Bridge",
+        "Composite",
+        "Decorator",
+        "Facade",
+        "Front controller",
+        "Flyweight",
+        "Proxy"
+      ]
+    },
+    {
+      "Behavioral": [
+        "Chain of Responsibility",
+        "Command",
+        "Interpreter",
+        "Iterator",
+        "Mediator",
+        "Memento",
+        "Null Object",
+        "Observer",
+        "Servant",
+        "Specification",
+        "State",
+        "Strategy",
+        "Template Method",
+        "Visitor"
+      ]
+    }
+  ]
 }

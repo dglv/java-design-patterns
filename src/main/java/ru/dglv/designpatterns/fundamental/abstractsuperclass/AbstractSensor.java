@@ -1,49 +1,37 @@
 package ru.dglv.designpatterns.fundamental.abstractsuperclass;
 
-abstract class AbstractSensor implements Sensor
-{
+abstract class AbstractSensor implements Sensor {
     private byte[] buffer;
 
-    protected abstract int getBufferSize();
+    public void input(byte[] bytes) {
+        if (buffer == null) {
+            init();
+        }
 
-    public void init()
-    {
-        final int size = getBufferSize();
-        buffer = new byte[size];
-        
-        System.out.println("The buffer was initialized by init()");
+        System.arraycopy(bytes, 0, buffer, 0, buffer.length);
     }
 
-    public void input(byte[] bytes)
-    {
-        if (buffer == null)
-        {
-            throw new IllegalStateException("Internal buffer not initialized");
+    public byte[] output() {
+        if (buffer == null) {
+            init();
         }
-        
-        for (int i = 0; i < buffer.length; i++)
-        {
-            buffer[i] = bytes[i];
-        }
-    }
 
-    public byte[] output()
-    {
-        if (buffer == null)
-        {
-            throw new IllegalStateException("Internal buffer not initialized");
-        }
-        
         return buffer.clone();
     }
 
-    public void clear()
-    {
+    public void clear() {
         throw new UnsupportedOperationException("Operation not supported");
     }
 
-    public String asString()
-    {
+    public String asString() {
         throw new UnsupportedOperationException("Operation not supported");
+    }
+
+    protected abstract int getBufferSize();
+
+    protected void init() {
+        buffer = new byte[getBufferSize()];
+
+        System.out.println("The buffer was initialized successfully.");
     }
 }

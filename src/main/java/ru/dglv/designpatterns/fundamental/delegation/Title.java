@@ -1,6 +1,5 @@
 package ru.dglv.designpatterns.fundamental.delegation;
 
-public interface Title
-{
+interface Title {
     void doWork();
 }

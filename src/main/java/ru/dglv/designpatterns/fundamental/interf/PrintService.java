@@ -1,6 +1,5 @@
 package ru.dglv.designpatterns.fundamental.interf;
 
-public interface PrintService
-{
+interface PrintService {
     void print();
 }
