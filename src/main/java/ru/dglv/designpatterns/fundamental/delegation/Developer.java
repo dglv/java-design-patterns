@@ -1,13 +1,19 @@
 package ru.dglv.designpatterns.fundamental.delegation;
 
-class Developer {
-    private Title title = new Junior();
+import javafx.geometry.Pos;
 
-    public void setTitle(final Title title) {
-        this.title = title;
+class Developer {
+    private Position position;
+
+    public Developer(Position position) {
+        this.position = position;
+    }
+
+    public void setPosition(final Position position) {
+        this.position = position;
     }
 
     public void develop() {
-        title.doWork();
+        position.doWork();
     }
 }

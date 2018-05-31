@@ -1,14 +1,14 @@
 package ru.dglv.designpatterns.fundamental.delegation;
 
-class App {
+class DelegationApp {
     public static void main(final String[] args) {
-        final Developer developer = new Developer();
+        final Developer developer = new Developer(new Junior());
         developer.develop();
 
-        developer.setTitle(new Middle());
+        developer.setPosition(new Middle());
         developer.develop();
 
-        developer.setTitle(new Senior());
+        developer.setPosition(new Senior());
         developer.develop();
     }
 }

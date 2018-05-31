@@ -1,5 +1,5 @@
 package ru.dglv.designpatterns.fundamental.delegation;
 
-interface Title {
+interface Position {
     void doWork();
 }
